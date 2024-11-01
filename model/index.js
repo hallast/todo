@@ -38,8 +38,19 @@ const pool = mysql.createPool({
   
  }
  
- 
+ async function addTask(desc, prio) {
+
+  const uusTask = {
+    desc: desc,
+    prio: prio,
+    isDone: o
+  }
+    
+  
+ }
+
  module.exports = {
-    getAllTodos
+    getAllTodos,
+    addTask
  }
  
